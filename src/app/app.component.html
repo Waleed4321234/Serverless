@@ -1,0 +1,9 @@
+<app-header *ngIf="this.authservice.isloggedin"></app-header>
+
+<router-outlet></router-outlet>
+
+<!--<h1>Fast Caching</h1>
+<div *ngFor="let repo of repos|async">
+    <h2>{{repo.name}}</h2>>
+    <div>{{repo.description}}</div>>
+</div>-->

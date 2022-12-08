@@ -1,0 +1,31 @@
+<header>
+    <div class="container">
+        <a href="#" routerLink="/home" class="logo">Waleed Food</a>
+        <nav>
+            <ul>
+                <li>
+                    <div>
+
+                        <span *ngIf="cartvalue===true" class="cart-num" id="topActionCartNumber"
+                            style="display: block;">1</span>
+                        <input type="image" id="saveform" src="/assets/Cart.png" alt="Cart" width="25" height="25"
+                            (click)="navigatetocart()">
+                        <a>Cart</a>
+
+                    </div>
+
+
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<!--<div class="s">
+    
+    <div class="w1">1</div>
+    <div class="w2">2</div>
+    <div class="w3">3</div>
+
+</div>-->

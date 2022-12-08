@@ -1,0 +1,103 @@
+
+/*.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    height: 20px;
+    margin-top: 20px;
+}
+.form-group2{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+}
+.form-group3    {
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    align-items: center;
+
+}
+.usernames{
+    margin-right: 15px;
+}
+.passwords{
+    margin-right: 15px;
+
+}
+.validateusername{
+    display: flex;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 14px;
+    margin-left: 430px;
+    
+}
+.validatepassword{
+    display: flex;
+    font-weight: bold;
+
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin-left: 10px;
+
+}
+.Submits{
+    margin-top: 10px;
+}*/
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.Submit {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}

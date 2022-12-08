@@ -1,0 +1,38 @@
+<h1>Login</h1>
+<p>Please Fill in this form to log in to an account</p>
+<hr>
+<form [formGroup]="form" (ngSubmit)="onloginsubmit()">
+    <div class="container">
+
+
+        <div class="form-group"
+            ng-class="{'has-error':(form.controls.username.errors&&form.controls.username.dirty) || !(usernameValid&& form.controls.username.dirty),'has-success':!form.controls.errors&&usernameValid}">
+            <label for="username" class="usernames"><b>username</b></label>
+            <input type="text" placeholder=" Enter username" name="username" id="username" required
+                formControlName="username">
+
+
+        </div>
+
+
+        <li *ngIf="form.controls.username.errors&&form.controls.username.dirty" class="validateusername">The field is
+            required</li>
+        <div class="form-group2">
+            <label for="password" class="passwords"><b>password</b></label>
+            <input type="password" placeholder="password" name="password" id="password" required
+                formControlName="password">
+
+
+        </div>
+        <li *ngIf="form.controls.password.errors&&form.controls.password.dirty" class="validatepassword">The field is
+            required</li>
+            <input type="submit" value="Submit" class="Submit">
+    </div>
+
+
+
+
+
+
+
+</form>

@@ -1,0 +1,109 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}   
+ul li a{
+    height: 25rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: blue;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+ul li a h4{
+    padding: 0;
+}
+.price{
+    color:black;
+}
+.origins{
+    color:black
+}
+.content{
+    padding: .5rem rem;
+}
+.product-item-footer{
+    justify-content: space-between;
+
+}
+.origins,.cook-time{
+    display:table-cell;
+
+    
+    
+    
+
+}
+.cook-time{
+    font-size: .8rem;
+    flex: 3;
+    text-align: right;
+    
+}
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    font-size: .7rem;
+    margin-right: .3rem;
+    display: inline-block;
+    color:grey
+
+}
+.newclass{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+}
+.addbutton{
+    flex: 0.1;
+    max-width: 23px;
+    max-height: 19px;
+   
+}
+.removebutton{
+    flex: 0.1;
+    max-width: 23px;
+    max-height: 19px;
+    margin-left: 155px;
+  
+
+}
+
+.cartquantity{
+    flex: 1;
+    color:black;
+    justify-content: center;
+    margin-left: 3px;
+   
+}
+
+.home-add-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5cb85c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .home-add-item button{
+    background-color: wheat;
+    color: black;
+    font-weight: black;
+    width: 15%;
+    height: 60%;
+  }

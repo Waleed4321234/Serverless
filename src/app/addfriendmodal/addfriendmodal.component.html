@@ -1,0 +1,70 @@
+
+    <div class="modal-content">
+        <div id="container">
+        <div class="modal-header">Add item</div>
+    <form [formGroup]="form" (ngSubmit)="onloginsubmit()">
+        <div class="form-group">
+
+
+            <div class="form-group2"
+                ng-class="{'has-error':(form.controls.id.errors&&form.controls.id.dirty) || !(usernameValid&& form.controls.id.dirty),'has-success':!form.controls.errors&&usernameValid}">
+                <label for="id" class="form-group-input"><b>id </b></label>
+                <input type="text" placeholder=" Enter id" name="id" id="id" required formControlName="id">
+
+
+            </div>
+            <li *ngIf="form.controls.id.errors&&form.controls.id.dirty" class="id">The field is required</li>
+            <div class="form-group2">
+                <label for="name" class="form-group-input"><b>name </b></label>
+                <input type="name" placeholder="name" name="name" id="name" required formControlName="name">
+
+
+            </div>
+
+            <div class="form-group2">
+                <label for="cooktime" class="form-group-input"><b>cooktime </b></label>
+                <input type="cooktime" placeholder="cooktime" name="cooktime" id="cooktime" required
+                    formControlName="cooktime">
+
+
+            </div>
+
+            <div class="form-group2">
+                <label for="price" class="form-group-input"><b>price </b></label>
+                <input type="price" placeholder="price" name="price" id="price" required formControlName="price">
+            </div>
+            <div class="form-group2">
+                <label for="favourite" class="form-group-input"><b>favourite </b></label>
+                <input type="favourite" placeholder="favourite" name="favourite" id="favourite" required
+                    formControlName="favourite">
+
+
+            </div>
+            <div class="form-group2">
+                <label for="stars" class="form-group-input"><b>stars </b></label>
+                <input type="stars" placeholder="stars" name="stars" id="stars" required formControlName="stars">
+
+
+            </div>
+
+            <div class="form-group2">
+                <label for="tags" class="form-group-input"><b>tags</b></label>
+                <input type="tags" placeholder="tags" name="tags" id="tags" required formControlName="tags">
+
+
+            </div>
+
+            <div class="form-group9">
+                <input type="submit" value="Submit" class="Submits">
+            </div>
+
+
+            <div id="actions">
+                <button (click)="onNo()">Cancel</button>
+            </div>
+        </div>
+
+
+        </form>
+        </div>
+    </div>

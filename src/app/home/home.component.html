@@ -1,0 +1,61 @@
+
+<app-search></app-search>
+
+<app-addfriendmodal *ngIf="fs.showAddFriend"></app-addfriendmodal>
+<app-tags></app-tags>
+
+<ul>
+    
+    <li *ngFor="let food of foods">
+        <a>
+            <img [src]="food.imageUrl" alt="food images">
+            <div class="content">
+                <div class="name">
+                    {{food.name}}
+                </div>
+
+             
+               
+                <span class="favourite{{food.favourite?'':'not'}}"></span>
+                <span class="star">
+                    {{food.stars}} Stars
+                </span>
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let origin of food.origins">
+                            {{origin}}
+
+                        </span>
+                    </div>
+                    <div class="cook-time">
+                        <span style="color:black">Time</span>
+                        {{food.cooktime}}
+
+
+                    </div>
+                  
+
+                </div>
+                <div class="price">
+                    {{food.price|currency}}
+
+                </div>
+
+            </div>
+        <div class="newclass">
+        <button (click)="AddItem(food.id)" class="addbutton">+</button>
+        <ng-container *ngFor="let item of items">
+            <span class="cartquantity" *ngIf="item.item_id==food.id&&item.quantity>0">Items in cart {{item.quantity}}</span>
+
+
+        </ng-container>
+        <button (click)="RemoveItem(food.id)" class="removebutton">-</button>
+    </div>
+
+            
+        </a>
+    </li>
+</ul>
+<div class="home-add-item">
+    <button (click)="AddNewitem()">Add Item</button>
+</div>

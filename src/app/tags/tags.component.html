@@ -1,0 +1,18 @@
+
+<div class="custom-select" style="width:300px;">
+    <select  [(ngModel)]="selectedvalue" (change)="onSelect()">
+        
+      <option class="tag-custom-select"  *ngFor="let f of tags" [value]="f.key" >{{f.label}} </option>
+      
+     
+    </select>
+
+  </div>
+
+
+<!--<div *ngIf="tags" class="tag">
+    <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}" >
+        {{tag.name}} ({{tag.count}})
+    </a>
+</div>-->
+

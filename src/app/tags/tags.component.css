@@ -1,0 +1,32 @@
+/*.tag{
+    display: flex;
+    justify-content: center;
+}
+div a{
+    display: table-cell;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 5px solid whitesmoke;
+    border-radius: 20rem;
+    color: gray;
+
+
+}
+div a  :hover{
+    opacity: 1;
+    cursor: pointer;;
+}*/
+.custom-select {
+    display: flex;
+    position: relative;
+    font-family: Arial;
+    background-color: aliceblue;
+  }
+  .tag-custom-select{
+    width: 30%;
+  }
